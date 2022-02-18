@@ -1,1 +1,48 @@
 @import '~bootstrap/scss/bootstrap.scss';
+@import './variables';
+
+// HEADER
+.upper-header {
+    height: 50px;
+    background-color: #0088CC;
+  }
+.mid-header {
+     
+}
+// BOTTOM-HEADER
+.bottom-header {
+    border-top: 1px solid #F7F7F7;
+    height: 80px;
+}
+.bottom-list,li{
+    display: inline;
+    padding: 10px;
+}
+// MAIN
+//JUMBOTRON
+.bg-jumbotron{
+    background-color: #F7F7F7;
+}
+
+// JUMBOTRON PICTURES
+.photo {
+    // background-image: url("../images/blog-46.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+// FOOTER
+
+//BACKGROUNDS
+// BUTTONS
+.btn-blue{
+    color:#FFF;
+    background-color: #0088CC;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 600;
+}
+// TEXT
+.text-light-blue{
+    color:#A7D6ED
+}
