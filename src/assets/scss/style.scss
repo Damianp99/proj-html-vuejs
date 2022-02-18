@@ -18,7 +18,8 @@
     display: inline;
     padding: 10px;
 }
-// MAIN
+
+
 //JUMBOTRON
 .bg-jumbotron{
     background-color: #F7F7F7;
@@ -31,6 +32,11 @@
     background-size: cover;
   }
 
+//  SLIDER
+#slider{
+    background-color: #0088CC;
+
+}
 // FOOTER
 
 //BACKGROUNDS
@@ -41,6 +47,15 @@
     padding: 5px;
     font-size: 10px;
     font-weight: 600;
+}
+
+.btn-black{
+    color:#FFF;
+    background-color: #212529;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0px;
 }
 // TEXT
 .text-light-blue{

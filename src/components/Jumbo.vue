@@ -1,6 +1,6 @@
 <template>
   <!-- JUMBOTRON PICTURES / BUTTONS / TITLES -->
-  <div class="bg-jumbotron">
+  <div class="bg-jumbotron mb-5">
     <div
       class="container d-flex align-items-center flex-wrap g-3 py-3"
       id="jumbotron"

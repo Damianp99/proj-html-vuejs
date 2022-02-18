@@ -2,10 +2,12 @@
   <main>
     <Jumbo />
     <Posts />
+    <Slider />
   </main>
 </template>
 
 <script>
+import Slider from "./Slider.vue";
 import Jumbo from "./Jumbo.vue";
 import Posts from "./Posts.vue";
 export default {
@@ -13,6 +15,7 @@ export default {
   components: {
     Jumbo,
     Posts,
+    Slider,
   },
   props: [""],
 };
