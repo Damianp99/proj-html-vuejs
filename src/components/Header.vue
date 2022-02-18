@@ -1,14 +1,15 @@
 <template>
-  <div id="app"></div>
+  <header></header>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "Header",
   components: {},
+  props: [""],
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~bootstrap/scss/bootstrap.scss";
 </style>

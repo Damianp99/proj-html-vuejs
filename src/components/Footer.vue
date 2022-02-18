@@ -1,14 +1,15 @@
 <template>
-  <div id="app"></div>
+  <footer></footer>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "Footer",
   components: {},
+  props: [""],
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~bootstrap/scss/bootstrap.scss";
 </style>
