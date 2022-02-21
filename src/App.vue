@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :links="links" />
+    <Header :upperlinks="upper_menu" :bottomlinks="bottom_menu" />
     <Main />
     <Footer />
   </div>
@@ -19,21 +19,17 @@ export default {
   },
   data() {
     return {
-      links: [
-        {
-          upper_menu: ["Sign In", "About Us", "Contact Us", "Buy Now"],
-          bottom_menu: [
-            "Home",
-            "Elements",
-            "Features",
-            "Pages",
-            "Portofolio",
-            "Blog",
-            "Shop",
-          ],
-          footer: [""],
-        },
+      upper_menu: ["Sign In", "About Us", "Contact Us", "Buy Now"],
+      bottom_menu: [
+        "Home",
+        "Elements",
+        "Features",
+        "Pages",
+        "Portofolio",
+        "Blog",
+        "Shop",
       ],
+      footer: [""],
     };
   },
 };
