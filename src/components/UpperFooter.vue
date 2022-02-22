@@ -4,10 +4,13 @@
       <div class="d-flex container">
         <div class="col-3 text-white blog">
           <h4 class="">{{ blog.title }}</h4>
-          <p>{{ blog.text }}</p>
-          <p>{{ blog.more_text }}</p>
+          <p class="text-secondary">{{ blog.text }}</p>
+          <p class="text-secondary">{{ blog.more_text }}</p>
           <span>{{ blog.more }}</span>
-          <span>{{ blog.view_more }}</span>
+          <span class="fw-bold small">
+            {{ blog.view_more
+            }}<font-awesome-icon icon="fa-solid fa-chevron-right " class="ps-1"
+          /></span>
         </div>
         <div class="col-3 text-white post">
           <h4 class="">{{ post.title }}</h4>
@@ -18,9 +21,9 @@
               alt="post picture"
             />
 
-            <p>
+            <p class="p-1">
               {{ post.text }} <br />
-              <span>{{ post.date }}</span>
+              <span class="text-secondary"> {{ post.date }}</span>
             </p>
           </div>
           <div class="d-flex">
@@ -29,9 +32,9 @@
               alt="post picture"
             />
 
-            <p>
+            <p class="p-1">
               {{ post.more_text }} <br />
-              <span>{{ post.date }}</span>
+              <span class="text-secondary">{{ post.date }}</span>
             </p>
           </div>
         </div>
@@ -39,13 +42,17 @@
           <h4 class="">{{ comments.title }}</h4>
 
           <p>
-            {{ comments.text }}
-            <span>{{ comments.date }}</span>
+            <font-awesome-icon
+              icon="fa-solid fa-chevron-right "
+              class="px-1"
+            />{{ comments.text }}
+            <span class="text-secondary">{{ comments.date }}</span>
           </p>
 
           <p>
+            <font-awesome-icon icon="fa-solid fa-chevron-right " />
             {{ comments.more_text }}
-            <span>{{ comments.date }}</span>
+            <span class="text-secondary">{{ comments.date }}</span>
           </p>
         </div>
         <div class="col-3 text-white categories">

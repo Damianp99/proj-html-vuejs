@@ -1,11 +1,12 @@
 <template>
   <div>
-    <div
-      class="card d-flex justify-content-between"
-      v-for="image in images"
-      :key="image.url"
-    >
-      <img :src="require(`../assets/images/${image.url}`)" alt="card picture" />
+    <div class="card d-flex justify-content-between">
+      <img
+        v-for="collection in collections"
+        :key="collection.url"
+        :src="require(`../assets/images/${collection.url}`)"
+        alt="card picture"
+      />
 
       <div class="col-12 d-flex justify-content-between">
         <div class="d-flex flex-column me-3">
@@ -13,10 +14,8 @@
           <span class="bg-onyx text-white p-1">Jan</span>
         </div>
         <div>
-          <h2 class="text-capitalize">{{ image.title }}</h2>
-          <p>
-            {{ image.text }}
-          </p>
+          <h2 class="text-capitalize"></h2>
+          <p></p>
           <div class="d-flex justify-content-between py-2">
             <ul>
               <li>
@@ -50,31 +49,10 @@
 
 <script>
 export default {
-  name: "Cards",
-  props: ["images"],
+  name: "Collection",
+  props: ["collections"],
 };
 </script>
 
-<style lang="scss" scoped>
-@import "../assets/scss/style.scss";
-.card {
-  border: 1px solid lightgray;
-  border-left: 0px;
-  border-right: 0px;
-  border-radius: 0px;
-}
-img {
-  height: 357px;
-  object-fit: cover;
-}
-*a {
-  text-decoration: none;
-  font-size: 14px;
-}
-.icon-color {
-  color: #b7b7b7;
-}
-.font-small {
-  font-size: 12px;
-}
+<style>
 </style>

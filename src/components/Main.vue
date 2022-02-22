@@ -28,11 +28,16 @@
     <Slider />
     <div class="container">
       <div class="row">
-        <div class="col-8 my-4" v-for="card in 4" :key="card">
-          <Cards />
+        <div class="col-8 my-4">
+          <Cards :images="cards" />
         </div>
         <div class="col-4">
           <SocialMedia />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <Collection :collections="photoCollection" />
         </div>
       </div>
     </div>
@@ -41,6 +46,7 @@
 
 <script>
 import SocialMedia from "./SocialMedia.vue";
+import Collection from "./Collection.vue";
 import Slider from "./Slider.vue";
 import Cards from "./Cards.vue";
 import Jumbo from "./Jumbo.vue";
@@ -53,6 +59,7 @@ export default {
     Slider,
     Cards,
     SocialMedia,
+    Collection,
   },
   props: [""],
   data() {
@@ -113,32 +120,32 @@ export default {
       ],
       jumbotrons: [
         {
-          url: "..assets/images/blog-46.jpg",
+          url: "blog-46.jpg",
           text: "how to take a better concert pictures in 30 seconds",
           buttonText: "PHOTOGRAPHY",
         },
         {
-          url: "..assets/images/blog-47.jpg",
+          url: "blog-47.jpg",
           text: "gadgets that make your smartphone even smarter",
           buttonText: "GADGETS",
         },
         {
-          url: "..assets/images/blog-48.jpg",
+          url: "blog-48.jpg",
           text: "20 top-rated tourist attractions in manhattan",
           buttonText: "TRAVEL",
         },
         {
-          url: "..assets/images/blog-49.jpg",
+          url: "blog-49.jpg",
           text: "the best way to ride a motorcycle",
           buttonText: "LIFESTYLE",
         },
         {
-          url: "..assets/images/blog-50.jpg",
+          url: "blog-50.jpg",
           text: "5 fun things to do at the beach",
           buttonText: "TRAVEL",
         },
         {
-          url: "..assets/images/blog-51.jpg",
+          url: "blog-51.jpg",
           text: "amazingly fresh fruit and herb drinks for summer",
           buttonText: "RECIPES",
         },
@@ -151,6 +158,39 @@ export default {
           text: "lorem ipsum",
         },
       },
+      photoCollection: {
+        url: [
+          "blog-13.jpg",
+          "blog-16.jpg",
+          "blog-20.jpg",
+          "blog-23.jpg",
+          "blog-29.jpg",
+          "blog-40jpg",
+        ],
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error id numquam hic provident reprehenderit harum, tempora earum repellendus totam beatae officia adipisci rerum dolor consequatur voluptas minus doloribus iste corrupti?",
+      },
+      cards: [
+        {
+          url: "blog-54.jpg",
+          title: "How To Make Friends as a Grown-Up",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi modi, praesentium iusto quaerat id officiis dolore incidunt iste, dignissimos aperiam autem perspiciatis laudantium distinctio! Dicta aut exercitationem vero voluptatum quaerat!",
+        },
+        {
+          url: "blog-55.jpg",
+          title: "Simple Ways To Have A Pretty Face",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi modi, praesentium iusto quaerat id officiis dolore incidunt iste, dignissimos aperiam autem perspiciatis laudantium distinctio! Dicta aut exercitationem vero voluptatum quaerat!",
+        },
+        {
+          url: "blog-56.jpg",
+          title: "ranking the greatest players in basketball",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi modi, praesentium iusto quaerat id officiis dolore incidunt iste, dignissimos aperiam autem perspiciatis laudantium distinctio! Dicta aut exercitationem vero voluptatum quaerat!",
+        },
+        {
+          url: "blog-58.jpg",
+          title: "top camper trailer towing tips",
+          text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi modi, praesentium iusto quaerat id officiis dolore incidunt iste, dignissimos aperiam autem perspiciatis laudantium distinctio! Dicta aut exercitationem vero voluptatum quaerat!",
+        },
+      ],
     };
   },
 };

@@ -14,7 +14,12 @@
 
       <ul>
         <li v-for="link in links" :key="link.text">
-          <a :href="link.url">{{ link.text }}</a>
+          <a class="text-muted small" :href="link.url">
+            <font-awesome-icon
+              icon="fa-solid fa-chevron-right "
+              class="px-1"
+            />{{ link.text }}</a
+          >
         </li>
         <li />
       </ul>
@@ -29,5 +34,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../assets/scss/style.scss";
+*a {
+  text-decoration: none;
+}
 </style>

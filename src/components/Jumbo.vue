@@ -4,10 +4,10 @@
       <div
         id="jumbotron"
         class="col-4"
-        v-for="(jumbotron, i) in jumbotrons"
-        :key="i"
+        v-for="(jumbotron, url) in jumbotrons"
+        :key="url"
         :style="{
-          backgroundImage: 'url(' + jumbotron.url + ')',
+          backgroundImage: 'url(' + imagesUri + jumbotron.url + ')',
         }"
       >
         <button class="btn btn-blue">
@@ -24,7 +24,7 @@ export default {
   name: "Jumbo",
   data() {
     return {
-      jumboUri: "..assets/images/",
+      imagesUri: "../assets/images/",
     };
   },
   props: ["jumbotrons"],

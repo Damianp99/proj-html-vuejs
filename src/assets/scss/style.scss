@@ -60,7 +60,11 @@
     font-weight: 600;
     
 }
-
+.btn-blank{
+    border:1px solid #b7b7b7;
+    background-color: #FFF;
+    border-radius: 5px;
+}
 .btn-black{
     color:#FFF;
     background-color: $light-black;

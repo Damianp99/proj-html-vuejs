@@ -28,19 +28,19 @@ export default {
   data() {
     return {
       upper_menu: [
-        { text: "Sign In", url: "#" },
-        { text: "About Us", url: "#" },
-        { text: "Contact Us", url: "#" },
-        { text: "Buy Now", url: "#" },
+        { text: "SIGN IN", url: "#" },
+        { text: "ABOUT US", url: "#" },
+        { text: "CONTACT US", url: "#" },
+        { text: "BUY NOW", url: "#" },
       ],
       bottom_menu: [
-        { text: "Home", url: "#" },
-        { text: "Elements", url: "#" },
-        { text: "Features", url: "#" },
-        { text: "Pages", url: "#" },
-        { text: "Portofolio", url: "#" },
-        { text: "Blog", url: "#" },
-        { text: "Shop", url: "#" },
+        { text: "HOME", url: "#" },
+        { text: "ELEMENTS", url: "#" },
+        { text: "FEATURES", url: "#" },
+        { text: "PAGES", url: "#" },
+        { text: "PORTOFOLIO", url: "#" },
+        { text: "BLOG", url: "#" },
+        { text: "SHOP", url: "#" },
       ],
 
       blog: {
