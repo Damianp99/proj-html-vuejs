@@ -23,7 +23,9 @@
 export default {
   name: "Jumbo",
   data() {
-    return {};
+    return {
+      jumboUri: "..assets/images/",
+    };
   },
   props: ["jumbotrons"],
 };

@@ -4,14 +4,14 @@
 // HEADER
 .upper-header {
     height: 50px;
-    background-color: #0088CC;
+    background-color: $bluesky;
   }
 .mid-header {
      
 }
 // BOTTOM-HEADER
 .bottom-header {
-    border-top: 1px solid #F7F7F7;
+    border-top: 1px solid  $whitesmoke;
     height: 80px;
 }
 .bottom-list,li{
@@ -22,7 +22,7 @@
 
 //JUMBOTRON
 .bg-jumbotron{
-    background-color: #F7F7F7;
+    background-color: $whitesmoke;
 }
 
 // JUMBOTRON PICTURES
@@ -34,24 +34,36 @@
 
 //  SLIDER
 #slider{
-    background-color: #0088CC;
+    background-color: $bluesky;
 
 }
 // FOOTER
-
+.upper-footer{
+    background-color: $light-black;
+}
+.bottom-footer{
+    background-color: $black;
+}
 //BACKGROUNDS
+.bg-onyx{
+    background-color: $black;
+}
+.bg-whitesmoke{
+    background-color: $whitesmoke;
+}
 // BUTTONS
 .btn-blue{
     color:#FFF;
-    background-color: #0088CC;
+    background-color: $bluesky;
     padding: 5px;
     font-size: 10px;
     font-weight: 600;
+    
 }
 
 .btn-black{
     color:#FFF;
-    background-color: #212529;
+    background-color: $light-black;
     padding: 5px;
     font-size: 16px;
     font-weight: 600;

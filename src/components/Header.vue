@@ -6,8 +6,8 @@
           <li class="small text-light-blue">
             Everything about Lifestyle,Travel and Gadgets
           </li>
-          <li v-for="(upperlink, i) in upperlinks" :key="i">
-            {{ upperlink.upper_menu }}
+          <li v-for="upperlink in upperlinks" :key="upperlink.text">
+            <a :href="upperlink.url">{{ upperlink.text }}</a>
           </li>
         </ul>
       </div>
@@ -20,8 +20,8 @@
     <div class="bottom-header container">
       <div class="d-flex justify-content-between align-items-center">
         <ul class="list-unstyled bottom-list">
-          <li v-for="(bottomlink, i) in bottomlinks" :key="i">
-            {{ bottomlink.bottom_menu }}
+          <li v-for="bottomlink in bottomlinks" :key="bottomlink.text">
+            <a :href="bottomlink.url">{{ bottomlink.text }}</a>
           </li>
         </ul>
         <div>

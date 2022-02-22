@@ -28,16 +28,19 @@
     <Slider />
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-8 my-4" v-for="card in 4" :key="card">
           <Cards />
         </div>
-        <div class="col-4"></div>
+        <div class="col-4">
+          <SocialMedia />
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <script>
+import SocialMedia from "./SocialMedia.vue";
 import Slider from "./Slider.vue";
 import Cards from "./Cards.vue";
 import Jumbo from "./Jumbo.vue";
@@ -49,6 +52,7 @@ export default {
     Posts,
     Slider,
     Cards,
+    SocialMedia,
   },
   props: [""],
   data() {
